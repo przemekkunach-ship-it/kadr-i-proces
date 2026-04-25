@@ -617,14 +617,34 @@ ul.clean {
           </div>
         </div>
         <div class="grid-2">
-          <form class="card form-grid">
-            <span class="tag">Komentarz lub pytanie</span>
-            <div class="field"><label>Nick</label><input type="text" placeholder="Twój nick" /></div>
-            <div class="field"><label>E-mail</label><input type="email" placeholder="opcjonalnie" /></div>
-            <div class="field"><label>Do jakiego tematu odpowiadasz</label><input type="text" placeholder="Np. Proces C-41 w domu" /></div>
-            <div class="field"><label>Treść komentarza / pytania</label><textarea placeholder="Napisz komentarz lub pytanie"></textarea></div>
-            <button class="btn btn-primary" type="button">Wyślij do moderacji</button>
-          </form>
+          <form class="card form-grid" action="https://formsubmit.co/przemekkunach@gmail.com" method="POST">
+  <span class="tag">Komentarz lub pytanie</span>
+
+  <input type="hidden" name="_subject" value="Nowe zgłoszenie ze strony Kadri i Proces" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <div class="field">
+    <label for="nick">Nick</label>
+    <input id="nick" type="text" name="nick" placeholder="Twój nick" required />
+  </div>
+
+  <div class="field">
+    <label for="email">E-mail</label>
+    <input id="email" type="email" name="email" placeholder="opcjonalnie" />
+  </div>
+
+  <div class="field">
+    <label for="temat">Do jakiego tematu odpowiadasz</label>
+    <input id="temat" type="text" name="temat" placeholder="Np. Proces C-41 w domu" required />
+  </div>
+
+  <div class="field">
+    <label for="wiadomosc">Treść komentarza / pytania</label>
+    <textarea id="wiadomosc" name="wiadomosc" placeholder="Napisz komentarz lub pytanie" required></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Wyślij do moderacji</button>
+</form>
           <form class="card form-grid">
             <span class="tag">Zdjęcie do analizy</span>
             <div class="field"><label>Nick</label><input type="text" placeholder="Twój nick" /></div>
