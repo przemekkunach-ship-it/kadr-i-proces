@@ -645,16 +645,34 @@ ul.clean {
 
   <button class="btn btn-primary" type="submit">Wyślij do moderacji</button>
 </form>
-          <form class="card form-grid">
-            <span class="tag">Zdjęcie do analizy</span>
-            <div class="field"><label>Nick</label><input type="text" placeholder="Twój nick" /></div>
-            <div class="field"><label>Tytuł zdjęcia</label><input type="text" placeholder="Np. Ulica po deszczu" /></div>
-            <div class="field"><label>Opis zdjęcia</label><textarea placeholder="Opisz zdjęcie i jego intencję"></textarea></div>
-            <div class="field"><label>Aparat</label><input type="text" placeholder="Np. Minolta SRT 101b" /></div>
-            <div class="field"><label>Film</label><input type="text" placeholder="Np. Kodak Gold 200" /></div>
-            <div class="field"><label>Pytanie do społeczności</label><textarea placeholder="Zadaj jedno konkretne pytanie"></textarea></div>
-            <button class="btn btn-primary" type="button">Wyślij zgłoszenie</button>
-          </form>
+          <form class="card form-grid" action="https://formsubmit.co/przemekkunach@gmail.com" method="POST">
+  <span class="tag">Wyślij zgłoszenie</span>
+
+  <input type="hidden" name="_subject" value="Nowe zgłoszenie wyzwania – Kadri i Proces" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <div class="field">
+    <label for="zglos-nick">Nick</label>
+    <input id="zglos-nick" type="text" name="nick" placeholder="Twój nick" required />
+  </div>
+
+  <div class="field">
+    <label for="zglos-email">E-mail</label>
+    <input id="zglos-email" type="email" name="email" placeholder="opcjonalnie" />
+  </div>
+
+  <div class="field">
+    <label for="zglos-temat">Tytuł zgłoszenia</label>
+    <input id="zglos-temat" type="text" name="tytul" placeholder="Np. 3 najlepsze klatki w Twoim mieście" required />
+  </div>
+
+  <div class="field">
+    <label for="zglos-opis">Opis zgłoszenia</label>
+    <textarea id="zglos-opis" name="opis" placeholder="Krótki opis serii, aparat, film, link do zdjęć jeśli chcesz" required></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Wyślij zgłoszenie</button>
+</form>
         </div>
       </div>
     </section>
