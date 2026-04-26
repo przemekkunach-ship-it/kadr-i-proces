@@ -735,5 +735,37 @@ ul.clean {
       <p><strong>Kadr i Proces</strong> — Strona wystartowała 15.04.2026</p>
     </div>
   </footer>
+  <script>
+  (function() {
+    // Czy na stronie jest sekcja z formularzem
+    var tematInput = document.getElementById('temat');
+    if (!tematInput) return;
+
+    // Pobierz część po # z URL (np. #zgloszenie?temat=...)
+    var hash = window.location.hash || '';
+    if (!hash.includes('?')) return;
+
+    var parts = hash.split('?');
+    var query = parts[1] || '';
+    if (!query) return;
+
+    // Rozbij parametry jak w normalnym query stringu
+    var params = new URLSearchParams(query);
+    var temat = params.get('temat');
+    if (!temat) return;
+
+    try {
+      tematInput.value = decodeURIComponent(temat);
+    } catch (e) {
+      tematInput.value = temat;
+    }
+
+    // Opcjonalnie przewiń do formularza, jeśli nie przewinęło
+    var section = document.getElementById('zgloszenie');
+    if (section && section.scrollIntoView) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  })();
+</script>
 </body>
 </html>
