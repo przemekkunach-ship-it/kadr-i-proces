@@ -1,34 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
-  <title>Okno i cień – kompozycja</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okno i cień — analiza zdjęcia — Kadr i Proces</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+    :root { --bg:#f4efe7; --paper:rgba(255,252,247,.88); --ink:#1d1916; --muted:#6f665d; --line:rgba(70,53,37,.12); --line-strong:rgba(70,53,37,.2); --accent:#4f3f31; --shadow-sm:0 10px 30px rgba(50,35,22,.06); --radius-lg:26px; --max:860px; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:'Inter',Arial,sans-serif; color:var(--ink); background:radial-gradient(circle at top left, rgba(216,194,163,.18), transparent 28%), linear-gradient(180deg,#f8f4ed 0%, var(--bg) 55%, #efe7dc 100%); line-height:1.75; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    main { width:min(calc(100% - 32px), var(--max)); margin:0 auto; padding:42px 0 72px; }
+    article { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow-sm); border-radius:var(--radius-lg); padding:32px; }
+    h1, h2 { font-family:'Cormorant Garamond', Georgia, serif; letter-spacing:-.03em; line-height:1; margin:0 0 16px; }
+    h1 { font-size:clamp(2.4rem, 6vw, 4.2rem); }
+    h2 { font-size:clamp(1.7rem, 4vw, 2.4rem); }
+    p { margin:0 0 16px; } .meta, span { color:var(--muted); }
+    .back-link { display:inline-block; margin-bottom:18px; color:var(--muted); font-size:.95rem; }
+    .topic-button { display:inline-block; margin:10px 0 18px; padding:10px 16px; border-radius:999px; border:1px solid var(--line-strong); background:rgba(255,255,255,.55); color:var(--ink); font-weight:600; }
+    figure { margin:22px 0 24px; }
+    img { max-width:100%; display:block; border-radius:18px; }
+    figcaption { margin-top:10px; color:var(--muted); font-size:.95rem; }
+    .comment-box { margin-top:24px; padding:18px 20px; border-radius:18px; background:rgba(255,255,255,.45); border:1px solid var(--line); }
+  </style>
 </head>
 <body>
-  <main class="page">
-    <article class="content">
+  <main>
+    <a class="back-link" href="../index.html">← Wróć do strony głównej</a>
+    <article>
+      <span>Kompozycja</span>
       <h1>Okno i cień – kompozycja</h1>
+      <a class="topic-button" href="../index.html#zgloszenie?temat=Okno%20i%20cie%C5%84%20%E2%80%93%20kompozycja">Dodaj komentarz do tej analizy</a>
 
-      <p>
-        <a href="../index.html#zgloszenie?temat=Okno%20i%20cie%C5%84%20%E2%80%93%20kompozycja"
-           style="display:inline-block;margin:12px 0;padding:10px 16px;border-radius:999px;border:1px solid #ccc;text-decoration:none;">
-          Dodaj komentarz do tej analizy
-        </a>
-      </p>
       <figure>
         <img src="../images/okno-i-cien.jpg" alt="Okno i cień – zdjęcie do analizy" />
         <figcaption>Okno i cień — kadr do rozmowy o kompozycji.</figcaption>
       </figure>
 
-      <p><strong>Zdjęcie:</strong> Okno i cień</p>
+      <p class="meta">Analiza zdjęcia</p>
       <p><strong>Aparat:</strong> Olympus OM-10</p>
       <p><strong>Film:</strong> Ilford HP5+</p>
       <p><strong>Pytanie:</strong> Czy cień na ścianie buduje kadr, czy tylko odciąga uwagę od okna?</p>
 
-      <p>Tu możesz opisać, jak rozkłada się ciężar kompozycji, jak linie i plamy światła prowadzą wzrok oraz czy cień pomaga czy przeszkadza.</p>
+      <p>To bardzo dobre pytanie kompozycyjne, bo cień nie jest tutaj tylko dodatkiem, ale pełnoprawnym elementem obrazu. Może prowadzić wzrok i budować napięcie, ale może też rozbijać prostotę motywu.</p>
+
+      <p>W takich kadrach najważniejszy jest balans między formą a rozproszeniem. Jeśli cień wzmacnia relację z oknem, pracuje na zdjęcie; jeśli żyje własnym życiem, zaczyna walczyć z głównym motywem.</p>
     </article>
+
+    <section class="comment-box">
+      <h2>Komentarze społeczności</h2>
+      <p><strong>ziarno_i_swiatlo</strong></p>
+      <p>Dla mnie cień jest tu potrzebny, ale powinien być minimalnie spokojniejszy — teraz prawie przejmuje rolę głównego bohatera.</p>
+    </section>
   </main>
 </body>
 </html>
